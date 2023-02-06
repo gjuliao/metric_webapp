@@ -1,33 +1,46 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Card from 'react-bootstrap/Card';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import ListGroup from 'react-bootstrap/ListGroup';
+import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prop-types
-const CountryCard = ({ population, name }) => {
+const CountryCard = ({
+  population,
+  name,
+  currency,
+  flags,
+}) => {
   // eslint-disable-next-line no-console
-  console.log(population, name);
+  console.log(population, name, currency, flags);
 
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={flags.png} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{name}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
+          {flags ? flags.alt : 'Information not available'}
         </Card.Text>
       </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href={name}>Learn More</Card.Link>
       </Card.Body>
     </Card>
   );
 };
 
 export default CountryCard;
+
+CountryCard.defaultProps = {
+  name: '',
+  population: 0,
+  flags: [],
+  currency: '',
+};
+
+CountryCard.propTypes = {
+  name: PropTypes.string,
+  population: PropTypes.number,
+  flags: PropTypes.string,
+  currency: PropTypes.string,
+};

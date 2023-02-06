@@ -13,6 +13,8 @@ const Home = () => {
             key={country.name}
             population={country.population}
             name={country.name.common}
+            currency={country.currency}
+            flags={country.flags}
           />
           ,
         </>
