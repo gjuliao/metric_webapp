@@ -3,7 +3,9 @@ import { configureStore } from '@reduxjs/toolkit';
 import dataReducer from './dataReducer';
 
 const store = configureStore({
-  data: dataReducer,
+  reducer: {
+    data: dataReducer,
+  },
 });
 
 export default store;
