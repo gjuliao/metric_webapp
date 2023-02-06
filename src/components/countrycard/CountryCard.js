@@ -4,10 +4,9 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 // eslint-disable-next-line react/prop-types
-const CountryCard = ({ country }) => {
-  const item = country;
+const CountryCard = ({ population, name }) => {
   // eslint-disable-next-line no-console
-  console.log(item.demonyms.eng.f);
+  console.log(population, name);
 
   return (
     <Card style={{ width: '18rem' }}>

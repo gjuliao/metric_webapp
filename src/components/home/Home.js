@@ -9,7 +9,11 @@ const Home = () => {
     <div className="home">
       { countries.map((country) => (
         <>
-          <CountryCard key={country.population} country={country} />
+          <CountryCard
+            key={country.name}
+            population={country.population}
+            name={country.name.common}
+          />
           ,
         </>
       )) }

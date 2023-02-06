@@ -12,7 +12,7 @@ export default dataReducer;
 
 export const getCountries = () => async (dispatch) => {
   try {
-    const res = await fetch('https://restcountries.com/v3.1/all');
+    const res = await fetch('https://restcountries.com/v3.1/region/europe');
     const data = await res.json();
     const countries = await data;
     dispatch({ type: GET_COUNTRIES, payload: countries });
