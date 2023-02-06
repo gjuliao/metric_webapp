@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Provider } from 'react';
 import ReactDOM from 'react-dom/client';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter as Browser } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Browser>
-      <App />
-    </Browser>
+    <Provider store={store}>
+      <Browser>
+        <App />
+      </Browser>
+    </Provider>
   </React.StrictMode>,
 );
 
