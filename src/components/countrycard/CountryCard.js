@@ -18,14 +18,14 @@ const CountryCard = ({
       <Card.Img variant="top" src={flags.png} />
       <Card.Body>
         <Card.Title>
-          <div>
-            <p>
+          <div className="flag_title">
+            <h4>
               This is the flag of
               {' '}
               <span>{name}</span>
               .
-              Click below to learn more of this country.
-            </p>
+            </h4>
+            <h6>Click below to learn more of this country.</h6>
           </div>
         </Card.Title>
       </Card.Body>
