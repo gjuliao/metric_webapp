@@ -19,12 +19,15 @@ const CountryCard = ({
       <Card.Body>
         <Card.Title>
           <div>
-            {name}
+            <p>
+              This is the flag of
+              {' '}
+              <span>{name}</span>
+              .
+              Click below to learn more of this country.
+            </p>
           </div>
         </Card.Title>
-        <Card.Text className="card_text">
-          {flags.alt ? flags.alt : 'Appologies.  The information about this flag is currently unavailable.  We are working hard to avoid empty spaces in the API.'}
-        </Card.Text>
       </Card.Body>
       <Card.Body>
         <Card.Link href={name}>Learn More</Card.Link>

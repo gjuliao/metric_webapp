@@ -14,6 +14,7 @@ const SoloCountry = ({
     <h2>{population}</h2>
     <h2>{name}</h2>
     <h2>{capital}</h2>
+    <h2>{flag.alt ? flag.alt : 'Appologies.  The information about this flag is currently unavailable.  We are working hard to avoid empty spaces in the API.'}</h2>
   </div>
 );
 
