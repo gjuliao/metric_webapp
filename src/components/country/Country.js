@@ -24,6 +24,7 @@ const Country = () => {
             flag={el.flags}
             population={el.population}
             capital={el.capital}
+            name={el.name.common}
           />
         </div>
       ))}

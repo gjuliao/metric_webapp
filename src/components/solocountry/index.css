@@ -1,0 +1,39 @@
+.solo_card {
+  width: 80%;
+  margin: auto;
+}
+
+.solo_card h2 {
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 5%;
+}
+
+.body_card {
+  display: flex;
+}
+
+.flag_leftside,
+.flag_rightside {
+  width: 40%;
+}
+
+.flag_leftside img {
+  width: 70%;
+  padding-bottom: 5%;
+}
+
+.flag_leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.population {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flag_rightside {
+  margin-top: 7%;
+}
