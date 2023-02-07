@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
+    <div data-testid="header" className="home">
       <h6>
         Europe has
         {' '}

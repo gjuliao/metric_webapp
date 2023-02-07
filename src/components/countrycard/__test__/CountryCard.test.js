@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import Home from '../Home';
+import CountryCard from '../CountryCard';
 import store from '../../../redux/store';
 
-test('It should render element with title header', async () => {
+test('It should render element with text Learn More', async () => {
   render(
     <Provider store={store}>
-      <Home />
+      <CountryCard />
     </Provider>,
   );
-  const headingElement = screen.getByTestId('header');
+  const headingElement = screen.getByText('Learn More');
   expect(headingElement).toBeInTheDocument();
 });
