@@ -1,3 +1,10 @@
 .home {
-  font-weight: bold;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.country {
+  margin: 1% 2%;
 }

@@ -1,32 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { useSelector } from 'react-redux';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router-dom';
+import SoloCountry from '../solocountry/SoloCountry';
 
 const Country = () => {
-  const [search, setSearch] = useState('');
-
   const { country } = useParams();
-  // eslint-disable-next-line no-console
-  // eslint-disable-next-line no-console
-  console.log(search);
 
-  const fetchDetails = () => {
-    fetch(`https://restcountries.com/v2/name/${country}`)
-      .then((response) => response.json())
-      .then((data) => setSearch(data));
-  };
+  const countries = useSelector((state) => state.data);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => fetchDetails(), []);
+  // eslint-disable-next-line no-unused-vars
+  const selectedCountry = [...countries].filter((el) => el.name.common === country);
 
   return (
     <div>
-      { search.map((item) => (
-        <>
-          <div>{item.capital}</div>
-        </>
-      ))}
-      ,
+      <SoloCountry />
     </div>
   );
 };

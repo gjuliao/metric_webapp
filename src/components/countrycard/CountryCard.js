@@ -2,6 +2,7 @@
 import Card from 'react-bootstrap/Card';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
+import './index.css';
 
 // eslint-disable-next-line react/prop-types
 const CountryCard = ({
@@ -18,8 +19,8 @@ const CountryCard = ({
       <Card.Img variant="top" src={flags.png} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          {flags ? flags.alt : 'Information not available'}
+        <Card.Text className="card_text">
+          {flags.alt ? flags.alt : 'Appologies.  The information about this flag is currently unavailable.  We are working hard to avoid empty spaces in the API.'}
         </Card.Text>
       </Card.Body>
       <Card.Body>

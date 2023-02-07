@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useSelector } from 'react-redux';
 import CountryCard from '../countrycard/CountryCard';
@@ -8,16 +9,14 @@ const Home = () => {
   return (
     <div className="home">
       { countries.map((country) => (
-        <>
+        <div key={country.name} className="country">
           <CountryCard
-            key={country.name}
             population={country.population}
             name={country.name.common}
             currency={country.currency}
             flags={country.flags}
           />
-          ,
-        </>
+        </div>
       )) }
     </div>
   );
