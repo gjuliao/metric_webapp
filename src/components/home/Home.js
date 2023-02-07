@@ -5,12 +5,12 @@ import { useSelector } from 'react-redux';
 import CountryCard from '../countrycard/CountryCard';
 
 const Home = () => {
+  const countries = useSelector((state) => state.data);
+
   const [query, setQuery] = useState({
     query: '',
-    list: [],
+    list: countries,
   });
-
-  const countries = useSelector((state) => state.data);
 
   const handleChange = (e) => {
     const results = countries.filter((el) => {
@@ -22,22 +22,32 @@ const Home = () => {
       list: results,
     });
   };
-  // eslint-disable-next-line no-console
-  console.log(query.list, 'from query');
+
   return (
     <div className="home">
+      <h6>
+        Europe has
+        {' '}
+        {countries.length}
+        {' '}
+        number of countries
+        .
+        Search the one you would like to know more of.
+      </h6>
       <form>
-        <input type="search" value={query.query} onChange={handleChange} />
+        <input placeholder="Search your country here..." type="search" value={query.query} onChange={handleChange} />
       </form>
-      { query.list.map((country) => (
-        <div key={country.name.common} className="country">
-          <CountryCard
-            population={country.population}
-            name={country.name.common}
-            flags={country.flags}
-          />
-        </div>
-      )) }
+      <div className="country_section">
+        { query.list.map((country) => (
+          <div key={country.name.common} className="country">
+            <CountryCard
+              population={country.population}
+              name={country.name.common}
+              flags={country.flags}
+            />
+          </div>
+        )) }
+      </div>
     </div>
   );
 };
