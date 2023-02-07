@@ -33,7 +33,7 @@ const Home = () => {
         .
         Search the one you would like to know more of.
       </h6>
-      <form>
+      <form name="input">
         <input placeholder="Search your country here..." type="search" value={query.query} onChange={(e) => handleChange(e)} />
       </form>
       <div className="country_section">
