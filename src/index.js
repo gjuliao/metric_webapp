@@ -2,15 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter as Browser } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './redux/store';
+import { getCountries } from './redux/dataReducer';
 
+store.dispatch(getCountries());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Browser>
-      <App />
-    </Browser>
+    <Provider store={store}>
+      <Browser>
+        <App />
+      </Browser>
+    </Provider>
   </React.StrictMode>,
 );
 
