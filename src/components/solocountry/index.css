@@ -1,6 +1,7 @@
 .solo_card {
   width: 80%;
   margin: auto;
+  padding-top: 6%;
 }
 
 .solo_card h2 {
@@ -31,7 +32,9 @@
 
 .population {
   display: flex;
-  justify-content: space-around;
+  width: 60%;
+  justify-content: space-between;
+  margin-left: 48%;
 }
 
 .flag_rightside {

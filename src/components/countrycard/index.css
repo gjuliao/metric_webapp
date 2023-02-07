@@ -5,3 +5,7 @@
 .flag_title h4 {
   padding-bottom: 6%;
 }
+
+.flag_title h6 {
+  text-align: start;
+}

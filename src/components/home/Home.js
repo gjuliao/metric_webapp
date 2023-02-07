@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './index.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useSelector } from 'react-redux';
 import CountryCard from '../countrycard/CountryCard';
 

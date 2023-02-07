@@ -7,6 +7,8 @@ const SoloCountry = ({
   population,
   flag,
   capital,
+  region,
+  area,
 }) => (
   <div className="solo_card">
     <h2>{name}</h2>
@@ -39,6 +41,22 @@ const SoloCountry = ({
             {capital}
           </p>
         </div>
+        <div className="population">
+          <h4>Region:</h4>
+          <p>
+            {' '}
+            {' '}
+            {region}
+          </p>
+        </div>
+        <div className="population">
+          <h4>Area:</h4>
+          <p>
+            {' '}
+            {' '}
+            {area}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -50,12 +68,16 @@ SoloCountry.defaultProps = {
   name: '',
   flag: '',
   population: 0,
+  area: 0,
   capital: '',
+  region: '',
 };
 
 SoloCountry.propTypes = {
   name: PropTypes.string,
   flag: PropTypes.objectOf(),
   population: PropTypes.number,
+  area: PropTypes.number,
   capital: PropTypes.arrayOf(),
+  region: PropTypes.string,
 };

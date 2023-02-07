@@ -1,7 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useSelector } from 'react-redux';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router-dom';
 import SoloCountry from '../solocountry/SoloCountry';
 
@@ -10,11 +8,10 @@ const Country = () => {
 
   const countries = useSelector((state) => state.data);
 
-  // eslint-disable-next-line no-unused-vars
   const selectedCountry = [...countries].filter((el) => el.name.common === country);
 
   // eslint-disable-next-line no-console
-  console.log(selectedCountry);
+  console.log(selectedCountry, 'from country');
 
   return (
     <div>
@@ -25,6 +22,8 @@ const Country = () => {
             population={el.population}
             capital={el.capital}
             name={el.name.common}
+            region={el.subregion}
+            area={el.area}
           />
         </div>
       ))}
