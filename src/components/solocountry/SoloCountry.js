@@ -10,7 +10,7 @@ const SoloCountry = ({
   capital,
 }) => (
   <div>
-    <img src={flag} alt="flag" />
+    <img src={flag.png} alt="flag" />
     <h2>{population}</h2>
     <h2>{name}</h2>
     <h2>{capital}</h2>
@@ -28,7 +28,7 @@ SoloCountry.defaultProps = {
 
 SoloCountry.propTypes = {
   name: PropTypes.string,
-  flag: PropTypes.string,
+  flag: PropTypes.objectOf(),
   population: PropTypes.number,
-  capital: PropTypes.string,
+  capital: PropTypes.arrayOf(),
 };

@@ -13,9 +13,20 @@ const Country = () => {
   // eslint-disable-next-line no-unused-vars
   const selectedCountry = [...countries].filter((el) => el.name.common === country);
 
+  // eslint-disable-next-line no-console
+  console.log(selectedCountry);
+
   return (
     <div>
-      <SoloCountry />
+      { selectedCountry.map((el) => (
+        <div key={el.name}>
+          <SoloCountry
+            flag={el.flags}
+            population={el.population}
+            capital={el.capital}
+          />
+        </div>
+      ))}
     </div>
   );
 };

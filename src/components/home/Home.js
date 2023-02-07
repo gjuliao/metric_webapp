@@ -9,11 +9,10 @@ const Home = () => {
   return (
     <div className="home">
       { countries.map((country) => (
-        <div key={country.name} className="country">
+        <div key={country.name.common} className="country">
           <CountryCard
             population={country.population}
             name={country.name.common}
-            currency={country.currency}
             flags={country.flags}
           />
         </div>
