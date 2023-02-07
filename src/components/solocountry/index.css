@@ -40,3 +40,39 @@
 .flag_rightside {
   margin-top: 7%;
 }
+
+@media only screen and (max-width: 700px) {
+
+  .flag_leftside img {
+  margin: auto;
+  margin-bottom: 4%;
+  }
+
+.body_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flag_leftside,
+.flag_rightside {
+  width: auto;
+}
+
+.flag_rightside {
+  width: 90%;
+}
+
+.population {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-between;
+  margin: auto;
+  padding-bottom: 4%;
+}
+
+  .solo_card h2 {
+    margin-top: 10%;
+  }
+}

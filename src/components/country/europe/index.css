@@ -8,4 +8,31 @@
 
 .europe_map {
   width: 40%;
+  min-width: 25rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .europe_map {
+    padding-top: 5%;
+    background-color: #22262A;
+    width: 100%;
+  }
+
+  .europe_container {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .europe_map {
+    padding-top: 5%;
+    background-color: #22262A;
+    max-width: 100%;
+  }
+
+  .europe_container {
+    width: 100%;
+    align-items: center;
+  }
 }
