@@ -30,6 +30,8 @@
 }
 
 .flag_title a {
+  position: absolut;
+  top: 2%;
   color: #fdfdf8 !important;
  }
 
@@ -65,7 +67,7 @@
     font-size: 0.8rem;
     position: absolute;
     right: 7%;
-    bottom: 3%;
+    top: 7%;
   }
   
 }

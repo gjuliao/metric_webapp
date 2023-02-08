@@ -1,5 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import PropTypes from 'prop-types';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { FaArrowRight } from 'react-icons/fa';
 import './index.css';
 
 const CountryCard = ({
@@ -18,7 +20,9 @@ const CountryCard = ({
             <br />
             {population}
           </p>
-          <a href={name}>Learn More</a>
+          <a href={name}>
+            <FaArrowRight />
+          </a>
         </div>
       </Card.Title>
     </div>
