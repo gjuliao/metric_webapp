@@ -6,21 +6,7 @@ import CountryCard from '../countrycard/CountryCard';
 const Home = () => {
   const countries = useSelector((state) => state.data);
 
-  // eslint-disable-next-line no-console
-  console.log(countries, 'from home');
-
   const [query, setQuery] = useState('');
-
-  // const handleChange = (e) => {
-  //   const results = countries.filter((el) => {
-  //     if (e.target.value === '') return countries;
-  //     return el.name.common.toLowerCase().includes(e.target.value.toLowerCase());
-  //   });
-  //   setQuery({
-  //     query: e.target.value,
-  //     list: results,
-  //   });
-  // };
 
   return (
     <div className="home">
