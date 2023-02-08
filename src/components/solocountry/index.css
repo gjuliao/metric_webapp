@@ -58,20 +58,39 @@
     width: auto;
   }
 
-  .flag_rightside {
-    width: 90%;
+  .flag_meaning {
+    width: 92%;
+    margin: auto;
   }
 
-  .population {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    justify-content: space-between;
+  .flag_meaning h3 {
+    padding-bottom: 3%;
+  }
+
+  .flag_rightside {
+    width: 100%;
     margin: auto;
-    padding-bottom: 4%;
+  }
+
+  .table_name {
+    font-weight: bold;
   }
 
   .solo_card h2 {
     margin-top: 10%;
+  }
+
+  .table_row {
+    width: 90%;
+    margin: 3%;
+  }
+  .table_row td {
+    padding: 0.8rem;
+  }
+
+  .table_row tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
