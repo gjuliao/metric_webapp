@@ -1,29 +1,28 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './index.css';
-import Card from 'react-bootstrap/Card';
 import map from './map_europe.png';
 
 const Europe = () => {
   const countries = useSelector((state) => state.data);
   return (
-    <Card className="bg-dark text-white europe_container">
-      <Card.Img className="europe_map" src={map} alt="Map" />
-      <Card.ImgOverlay>
-        <a href="/europe">
-          <Card.Title>
+    <>
+      <div className="bg-dark text-white europe_container">
+        <img className="europe_map" src={map} alt="Map" />
+        <div className="map_text">
+          <div>
             <div className="europe">
-              Europe has
-              {' '}
               {countries.length}
               {' '}
-              countries.
+              COUNTRIES IN EUROPE.
             </div>
-          </Card.Title>
-          <Card.Text>Click here to know more</Card.Text>
-        </a>
-      </Card.ImgOverlay>
-    </Card>
+          </div>
+          <a href="/europe">
+            <div>Click here to know more</div>
+          </a>
+        </div>
+      </div>
+    </>
   );
 };
 
