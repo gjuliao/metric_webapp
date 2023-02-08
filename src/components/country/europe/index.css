@@ -1,6 +1,7 @@
 .europe_container {
   padding-top: 8%;
   display: flex;
+  background-color: #5688e3;
 }
 
 .europe {
@@ -11,21 +12,27 @@
   width: 50%;
 }
 
-@media only screen and (min-width: 400px) {
-  .europe_map {
-    padding-top: 5%;
-    background-color: #22262a;
-    width: 50%;
-  }
-
+@media only screen and (max-width: 900px) {
   .europe_container {
     width: 100%;
     align-items: center;
+    width: 600px;
+    margin: auto;
+  }
+  
+  .europe_map {
+    padding-top: 5%;
+    width: 60%;
   }
 
   .map_text {
     text-align: center;
     justify-content: center;
-    padding-left: 10%;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  .know_more {
+    color: white;
   }
 }

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './index.css';
 
 const Nav = () => (
-  <Navbar bg="dark" variant="dark">
+  <Navbar className="navbar">
     <Container>
       <Navbar.Brand href="/">
         <h2 className="title">COUNTRYPEDIA</h2>

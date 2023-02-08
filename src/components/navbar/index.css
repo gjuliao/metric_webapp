@@ -1,5 +1,13 @@
+.navbar {
+  background-color: #4269b2;
+}
+
 .navbar-brand {
   margin: auto;
+}
+
+.title {
+  color: #d9e2f7;
 }
 
 .navbar {

@@ -5,25 +5,23 @@ import './index.css';
 const CountryCard = ({
   name,
   flags,
+  population,
 }) => (
   <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={flags.png} />
-    <Card.Body>
+    <img src={flags.png} alt="country flag" />
+    <div className="card_body">
       <Card.Title>
         <div className="flag_title">
-          <h4>
-            This is the flag of
-            {' '}
-            <span>{name}</span>
-            .
-          </h4>
-          <h6>Click below to learn more of this country.</h6>
+          <h4 className="country_name">{name}</h4>
+          <p>
+            Population:
+            <br />
+            {population}
+          </p>
+          <a href={name}>Learn More</a>
         </div>
       </Card.Title>
-    </Card.Body>
-    <Card.Body>
-      <Card.Link href={name}>Learn More</Card.Link>
-    </Card.Body>
+    </div>
   </Card>
 );
 
@@ -32,9 +30,11 @@ export default CountryCard;
 CountryCard.defaultProps = {
   name: '',
   flags: [],
+  population: 0,
 };
 
 CountryCard.propTypes = {
   name: PropTypes.string,
   flags: PropTypes.objectOf(),
+  population: PropTypes.number,
 };
