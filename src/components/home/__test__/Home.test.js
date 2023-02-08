@@ -12,3 +12,13 @@ test('It should render element with title header', async () => {
   const headingElement = screen.getByTestId('header');
   expect(headingElement).toBeInTheDocument();
 });
+
+test('It should render element with placeholder text', async () => {
+  render(
+    <Provider store={store}>
+      <Home />
+    </Provider>,
+  );
+  const headingElement = screen.getByPlaceholderText('Search your country here...');
+  expect(headingElement).toBeInTheDocument();
+});

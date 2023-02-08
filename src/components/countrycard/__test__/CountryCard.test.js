@@ -12,3 +12,13 @@ test('It should render element with text Learn More', async () => {
   const headingElement = screen.getByText('Learn More');
   expect(headingElement).toBeInTheDocument();
 });
+
+test('It should render props text', async () => {
+  render(
+    <Provider store={store}>
+      <CountryCard name="Spain" />
+    </Provider>,
+  );
+  const headingElement = screen.getByText('Spain');
+  expect(headingElement).toBeInTheDocument();
+});
