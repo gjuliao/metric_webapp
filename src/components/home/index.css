@@ -46,8 +46,13 @@
     margin: auto;
   }
 
+  .home form {
+    padding-left: 2%;
+  }
+
   .home form input {
     min-width: 36rem;
+    padding-left: 5%;
   }
 
   .country_section {

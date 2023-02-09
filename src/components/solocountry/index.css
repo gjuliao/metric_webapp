@@ -74,7 +74,7 @@ table tr:nth-child(even) td {
     padding-top: 4%;
     margin-left: 12%;
     height: 100vh;
-    padding-bottom: 130%;
+    padding-bottom: 140%;
   }
 
   .solo_card h2 {
@@ -100,6 +100,7 @@ table tr:nth-child(even) td {
   .flag_meaning {
     width: 92%;
     margin: auto;
+    padding-top: 5%;
   }
 
   .flag_meaning h3 {
