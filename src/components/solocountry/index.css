@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
 .solo_card {
   width: 80%;
   margin: auto;
   margin-top: 5%;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
 }
 
 .solo_card h2 {
@@ -21,12 +25,11 @@
 }
 
 .flag_leftside {
-  padding-top: 4%;
+  padding-top: 6%;
 }
 
 .flag_leftside img {
   width: 70%;
-  padding-bottom: 5%;
 }
 
 .flag_leftside {
@@ -37,6 +40,7 @@
 
 .flag_meaning {
   color: #d9e2f7;
+  margin-top: 20%;
 }
 
 .flag_meaning p {
@@ -47,6 +51,20 @@
   color: #d9e2f7;
   margin-top: 10%;
   margin-left: 15%;
+}
+
+.table_row tr th {
+  padding-bottom: 20%;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.table_name td {
+  padding: 0.5rem;
+}
+
+.area {
+  padding-left: 2%;
 }
 
 @media only screen and (max-width: 900px) {

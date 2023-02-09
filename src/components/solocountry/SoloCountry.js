@@ -29,21 +29,21 @@ const SoloCountry = ({
           <tr>
             <th>COUNTRY BREAKDOWN</th>
           </tr>
-          <tr>
-            <td className="table_name">POPULATION</td>
+          <tr className="table_name">
+            <td>POPULATION</td>
             <td>{population}</td>
           </tr>
-          <tr>
-            <td className="table_name">CAPITAL</td>
+          <tr className="table_name">
+            <td>CAPITAL</td>
             <td>{capital}</td>
           </tr>
-          <tr>
-            <td className="table_name">REGION</td>
+          <tr className="table_name">
+            <td>REGION</td>
             <td>{region}</td>
           </tr>
           <tr>
-            <td className="table_name">AREA</td>
-            <td>{area}</td>
+            <td className="table_name area">AREA</td>
+            <td className="area">{area}</td>
           </tr>
         </table>
       </div>
