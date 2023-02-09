@@ -9,7 +9,7 @@ const Home = () => {
   const [query, setQuery] = useState('');
 
   return (
-    <div className="home">
+    <div data-testid="header" className="home">
       <h6>
         Search stats by country.
       </h6>
