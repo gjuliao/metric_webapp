@@ -1,11 +1,83 @@
-.card-title {
-  padding-top: 10%;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
+.card {
+  background-color: #3f62a5;
+  color: #fdfdf8;
+  width: 12rem !important;
+  font-family: 'Lato', sans-serif;
 }
 
-.flag_title h4 {
-  padding-bottom: 6%;
+.card a {
+  align-self: end;
+  color: #fdfdf8 !important;
+  padding-right: 3%;
+  font-size: 1.2rem;
 }
 
-.flag_title h6 {
-  text-align: start;
+.card_image {
+  padding-left: 25%;
+}
+
+.country_name {
+  padding-left: 18%;
+  padding-top: 5%;
+}
+
+.card img {
+  margin: auto;
+  width: 8rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  align-items: center;
+  margin-top: 30%;
+}
+
+.country_name td {
+  margin: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 9rem !important;
+  }
+
+  .card a {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+  }
+
+  .card_image {
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .card img {
+    margin: auto;
+    width: 6rem;
+    min-height: 4rem;
+    align-items: center;
+    margin-top: 30%;
+  }
+
+  .country_name {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .card-img-top {
+    min-width: 3rem;
+    min-height: 7rem;
+  }
+
+  .flag_title h4 {
+    font-size: 1.2rem;
+  }
+
+  .flag_title p {
+    font-size: 0.8rem;
+    text-align: end;
+  }
 }

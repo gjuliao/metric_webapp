@@ -6,38 +6,20 @@ import CountryCard from '../countrycard/CountryCard';
 const Home = () => {
   const countries = useSelector((state) => state.data);
 
-  const [query, setQuery] = useState({
-    query: '',
-    list: countries,
-  });
-
-  const handleChange = (e) => {
-    const results = countries.filter((el) => {
-      if (e.target.value === '') return countries;
-      return el.name.common.toLowerCase().includes(e.target.value.toLowerCase());
-    });
-    setQuery({
-      query: e.target.value,
-      list: results,
-    });
-  };
+  const [query, setQuery] = useState('');
 
   return (
     <div data-testid="header" className="home">
       <h6>
-        Europe has
-        {' '}
-        {countries.length}
-        {' '}
-        number of countries
-        .
-        Search the one you would like to know more of.
+        Search stats by country.
       </h6>
-      <form name="input">
-        <input placeholder="Search your country here..." type="search" value={query.query} onChange={(e) => handleChange(e)} />
+      <form>
+        <input placeholder="Search your country here..." type="search" value={query.query} onChange={(e) => setQuery(e.target.value)} />
       </form>
       <div className="country_section">
-        { query.list.map((country) => (
+        { countries.filter((el) => (
+          (query === '' ? el : el.name.common.toLowerCase().includes(query.toLowerCase()))
+        )).map((country) => (
           <div key={country.name.common} className="country">
             <CountryCard
               population={country.population}

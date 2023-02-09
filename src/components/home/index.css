@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
 .home {
   width: 90%;
   margin: auto;
-  padding-top: 8%;
+  padding-top: 3%;
+  background-color: #4269b2;
+  font-family: 'Lato', sans-serif;
 }
 
 .home h6 {
-  text-align: center;
-  margin-bottom: 5%;
+  color: #d9e2f7;
+  padding-bottom: 2%;
 }
 
 .home form {
-  width: 60%;
+  width: 100%;
   border-style: none;
-  padding-left: 40%;
+  margin: auto;
 }
 
 .home form input {
-  width: 100%;
-  padding: 0.5rem 1rem;
+  min-width: 100%;
+  padding: 0.5rem;
 }
 
 .country_section {
@@ -29,4 +33,28 @@
 
 .country {
   margin: 1% 2%;
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    max-width: 600px;
+    min-width: 600px;
+    margin: auto;
+  }
+
+  .home h6 {
+    margin: auto;
+  }
+
+  .home form input {
+    min-width: 36rem;
+  }
+
+  .country_section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding-top: 5%;
+    justify-content: space-around;
+  }
 }

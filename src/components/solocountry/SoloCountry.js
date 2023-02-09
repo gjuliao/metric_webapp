@@ -15,7 +15,7 @@ const SoloCountry = ({
     <div className="body_card">
       <div className="flag_leftside">
         <img src={flag.png} alt="flag" />
-        <div>
+        <div className="flag_meaning">
           <h3>Flag Meaning</h3>
           {' '}
           {' '}
@@ -25,38 +25,27 @@ const SoloCountry = ({
         </div>
       </div>
       <div className="flag_rightside">
-        <div className="population">
-          <h4>Population:</h4>
-          <p>
-            {' '}
-            {' '}
-            {population}
-          </p>
-        </div>
-        <div className="population">
-          <h4>Capital:</h4>
-          <p>
-            {' '}
-            {' '}
-            {capital}
-          </p>
-        </div>
-        <div className="population">
-          <h4>Region:</h4>
-          <p>
-            {' '}
-            {' '}
-            {region}
-          </p>
-        </div>
-        <div className="population">
-          <h4>Area:</h4>
-          <p>
-            {' '}
-            {' '}
-            {area}
-          </p>
-        </div>
+        <table className="table_row">
+          <tr>
+            <th>COUNTRY BREAKDOWN</th>
+          </tr>
+          <tr className="table_name">
+            <td>POPULATION</td>
+            <td>{population}</td>
+          </tr>
+          <tr className="table_name">
+            <td>CAPITAL</td>
+            <td>{capital}</td>
+          </tr>
+          <tr className="table_name">
+            <td>REGION</td>
+            <td>{region}</td>
+          </tr>
+          <tr>
+            <td className="table_name area">AREA</td>
+            <td className="area">{area}</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
