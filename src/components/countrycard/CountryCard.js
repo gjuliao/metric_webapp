@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 const CountryCard = ({
@@ -9,9 +10,9 @@ const CountryCard = ({
   population,
 }) => (
   <table className="card" style={{ width: '18rem' }}>
-    <a href={name}>
+    <Link to={name}>
       <FaArrowRight />
-    </a>
+    </Link>
     <tr className="country_name">
       <th>
         {name}
