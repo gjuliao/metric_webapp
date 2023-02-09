@@ -32,7 +32,7 @@
 }
 
 .country {
-  margin: 1% 2%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 900px) {

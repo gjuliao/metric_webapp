@@ -3,7 +3,6 @@
 .card {
   background-color: #3f62a5;
   color: #fdfdf8;
-  width: 12rem !important;
   font-family: 'Lato', sans-serif;
 }
 
@@ -48,7 +47,7 @@
 
 @media only screen and (max-width: 900px) {
   .card {
-    width: 270px !important;
+    width: 100%;
   }
 
   .card a {
