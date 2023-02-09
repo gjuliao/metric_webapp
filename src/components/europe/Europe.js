@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './index.css';
 import map from './map_europe.png';
-import Home from '../../home/Home';
+import Home from '../home/Home';
 
 const Europe = () => {
   const countries = useSelector((state) => state.data);

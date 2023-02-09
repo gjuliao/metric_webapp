@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/navbar/Nav';
 import Country from './components/country/Country';
-import Europe from './components/country/europe/Europe';
+import Europe from './components/europe/Europe';
 
 function App() {
   return (
