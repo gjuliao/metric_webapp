@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './index.css';
