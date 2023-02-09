@@ -1,4 +1,3 @@
-import Card from 'react-bootstrap/Card';
 import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { FaArrowRight } from 'react-icons/fa';
@@ -9,10 +8,10 @@ const CountryCard = ({
   flags,
   population,
 }) => (
-  <Card style={{ width: '18rem' }}>
+  <div className="card" style={{ width: '18rem' }}>
     <img src={flags.png} alt="country flag" />
     <div className="card_body">
-      <Card.Title>
+      <div className="card_title">
         <div className="flag_title">
           <h4 className="country_name">{name}</h4>
           <p>
@@ -24,9 +23,9 @@ const CountryCard = ({
             <FaArrowRight />
           </a>
         </div>
-      </Card.Title>
+      </div>
     </div>
-  </Card>
+  </div>
 );
 
 export default CountryCard;

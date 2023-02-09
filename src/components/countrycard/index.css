@@ -1,6 +1,7 @@
 .card {
   border: 1px solid #fdfdf8;
   --bs-card-bg: none !important;
+  background-color: #3f62a5;
 }
 
 .card-title {
@@ -8,7 +9,7 @@
 }
 
 .card_body {
-  background-color: #4269b2;
+  background-color: #3f62a5;
   color: #fdfdf8;
 }
 
@@ -41,8 +42,11 @@
   }
 
   .card img {
-    min-width: 7rem;
-    min-height: 6rem;
+    margin: auto;
+    width: 4rem;
+    min-height: 3rem;
+    align-items: center;
+    margin-top: 30%;
   }
 
   .card_body {

@@ -1,13 +1,14 @@
 .solo_card {
   width: 80%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .solo_card h2 {
   text-align: center;
   margin-top: 3%;
   padding-bottom: 5%;
+  color: #d9e2f7;
 }
 
 .body_card {
@@ -30,15 +31,17 @@
   justify-content: space-between;
 }
 
-.population {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-  margin-left: 48%;
+.flag_meaning {
+  color: #d9e2f7;
+}
+
+.flag_meaning p {
+  color: #d9e2f7;
 }
 
 .flag_rightside {
   margin-top: 7%;
+  color: #d9e2f7;
 }
 
 @media only screen and (max-width: 900px) {

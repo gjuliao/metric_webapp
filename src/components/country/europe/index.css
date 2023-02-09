@@ -13,8 +13,9 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .europe_container {
-    width: 100%;
+   .europe_container {
+    min-width: 600px;
+    max-width: 600px;
     align-items: center;
     width: 600px;
     margin: auto;
