@@ -8,7 +8,7 @@ const CountryCard = ({
   flags,
   population,
 }) => (
-  <table className="card" style={{ width: '100%' }}>
+  <table data-testId="table" title="table" className="card" style={{ width: '100%' }}>
     <Link to={name}>
       <FaArrowRight />
     </Link>
