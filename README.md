@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://pending)
+- [Live Demo Link](https://metric-app-4hif.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
