@@ -8,30 +8,30 @@ const CountryCard = ({
   flags,
   population,
 }) => (
-  <table data-testId="table" title="table" className="card" style={{ width: '100%' }}>
+  <div data-testId="table" title="table" className="card" style={{ width: '100%' }}>
     <Link to={name}>
       <FaArrowRight />
     </Link>
-    <tr className="country_name">
+    <div className="country_name">
       <th>
         {name}
       </th>
-    </tr>
-    <tr className="card_image">
-      <td>
+    </div>
+    <div className="card_image">
+      <div>
         <img src={flags.png} alt="country flag" />
-      </td>
-    </tr>
-    <tr className="card_population">
-      <td>
+      </div>
+    </div>
+    <div className="card_population">
+      <div>
         <p>
           Pop:
           {' '}
           {population}
         </p>
-      </td>
-    </tr>
-  </table>
+      </div>
+    </div>
+  </div>
 );
 
 export default CountryCard;

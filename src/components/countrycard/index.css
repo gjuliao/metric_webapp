@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
 
 .card {
-  background-color: #3f62a5;
+  background-color: transparent;
   color: #fdfdf8;
   font-family: 'Lato', sans-serif;
   margin: auto;
