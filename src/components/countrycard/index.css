@@ -4,6 +4,7 @@
   background-color: #3f62a5;
   color: #fdfdf8;
   font-family: 'Lato', sans-serif;
+  margin: auto;
 }
 
 .card a {
@@ -28,10 +29,10 @@
 
 .card img {
   margin: auto;
-  min-width: 7rem;
-  max-width: 7rem;
-  min-height: 4rem;
-  max-height: 4rem;
+  min-width: 8rem;
+  max-width: 12rem;
+  min-height: 8rem;
+  max-height: 8rem;
 }
 
 .card_population {
@@ -70,11 +71,10 @@
 
   .card img {
     margin: auto;
-    width: 6rem;
-    min-height: 4rem;
-    min-width: 7rem;
-    max-height: 4rem;
-    max-width: 5rem;
+    min-width: 6rem;
+    max-width: 8rem;
+    min-height: 6rem;
+    max-height: 6rem;
     align-items: center;
     margin-top: 10%;
   }
@@ -85,7 +85,8 @@
 
   .card_population p {
     align-self: end;
-    padding-right: 7%;
+    font-size: 0.8rem;
+    right: 2%;
   }
 
   .country_name {
