@@ -17,7 +17,7 @@
 }
 
 .home form input {
-  width: 25rem;
+  min-width: 100%;
   padding: 0.5rem;
 }
 

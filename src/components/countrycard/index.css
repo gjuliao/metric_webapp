@@ -1,39 +1,37 @@
 .card {
-  border: 1px solid #fdfdf8;
-  --bs-card-bg: none !important;
-  background-color: #3f62a5;
-}
-
-.card-title {
-  padding-top: 10%;
-}
-
-.card_body {
   background-color: #3f62a5;
   color: #fdfdf8;
+  width: 12rem !important;
 }
 
-.flag_title h4 {
-  padding-bottom: 6%;
-}
-
-.country_tag {
-  text-decoration: underline;;
-}
-
-.flag_title h6,
-.flag_title h4 {
-  text-align: end;
-}
-
-.card-img-top {
-  min-height: 12rem;
-}
-
-.flag_title a {
-  position: absolut;
-  top: 2%;
+.card a {
+  align-self: end;
   color: #fdfdf8 !important;
+  padding-right: 3%;
+  font-size: 1.2rem;
+ }
+
+ .card_image {
+  padding-left: 25%;
+ }
+
+ .country_name {
+  padding-left: 18%;
+  padding-top: 5%;
+ }
+
+ .card img {
+  margin: auto;
+  width: 8rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  align-items: center;
+  margin-top: 30%;
+}
+
+ .country_name td {
+  margin: auto;
+  width: 100%;
  }
 
 @media only screen and (max-width: 900px) {
@@ -41,16 +39,29 @@
     width: 9rem !important;
   }
 
+  .card a {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+  }
+
+  .card_image {
+    width: 100%;
+    padding-left: 15%;
+  }
+
   .card img {
     margin: auto;
-    width: 4rem;
-    min-height: 3rem;
+    width: 6rem;
+    min-height: 4rem;
     align-items: center;
     margin-top: 30%;
   }
 
-  .card_body {
-    padding: 0.7em;
+  .country_name {
+    width: 100%;
+    padding-left: 10%;
   }
 
   .card-img-top {
@@ -65,13 +76,6 @@
   .flag_title p {
     font-size: 0.8rem;
     text-align: end;
-  }
-
-  .flag_title a {
-    font-size: 0.8rem;
-    position: absolute;
-    right: 7%;
-    top: 7%;
   }
   
 }

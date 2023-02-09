@@ -6,8 +6,7 @@
 
 .solo_card h2 {
   text-align: center;
-  margin-top: 3%;
-  padding-bottom: 5%;
+  padding-top: 8%;
   color: #d9e2f7;
 }
 
@@ -18,6 +17,11 @@
 .flag_leftside,
 .flag_rightside {
   width: 40%;
+  padding-bottom: 4%;
+}
+
+.flag_leftside {
+  padding-top: 4%;
 }
 
 .flag_leftside img {
@@ -40,8 +44,9 @@
 }
 
 .flag_rightside {
-  margin-top: 7%;
   color: #d9e2f7;
+  margin-top: 10%;
+  margin-left: 15%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -49,6 +54,10 @@
     max-width: 600px;
     padding-top: 4%;
     margin-left: 12%;
+  }
+
+  .solo_card h2 {
+    margin-bottom: 7%;
   }
 
   .flag_leftside img {
@@ -73,7 +82,7 @@
   }
 
   .flag_meaning h3 {
-    padding-bottom: 3%;
+    padding-bottom: 5%;
   }
 
   .flag_rightside {
@@ -83,11 +92,6 @@
 
   .table_name {
     font-weight: bold;
-  }
-
-  .solo_card h2 {
-    margin-top: 5%;
-    margin-bottom: 7%;
   }
 
   .table_row {

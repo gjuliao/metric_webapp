@@ -12,6 +12,10 @@
   width: 50%;
 }
 
+.map_text {
+  margin: auto;
+}
+
 @media only screen and (max-width: 900px) {
    .europe_container {
     min-width: 600px;
