@@ -63,11 +63,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO & LOOM VIDEO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo & Loom Video <a name="live-demo"></a>
 
 - [Live Demo Link](https://metric-app-4hif.onrender.com/)
+- [Loom Intro Video](https://www.loom.com/share/3494eac2f64344619450e0aa2f05b92c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
