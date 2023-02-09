@@ -3,6 +3,10 @@
 .navbar {
   background-color: #4269b2;
   font-family: 'Lato', sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -11,11 +15,4 @@
 
 .title {
   color: #d9e2f7;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
 }

@@ -20,14 +20,14 @@
 }
 
 @media only screen and (max-width: 900px) {
-   .europe_container {
+  .europe_container {
     min-width: 600px;
     max-width: 600px;
     align-items: center;
     width: 600px;
     margin: auto;
   }
-  
+
   .europe_map {
     padding-top: 5%;
     width: 60%;

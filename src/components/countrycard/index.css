@@ -12,18 +12,18 @@
   color: #fdfdf8 !important;
   padding-right: 3%;
   font-size: 1.2rem;
- }
+}
 
- .card_image {
+.card_image {
   padding-left: 25%;
- }
+}
 
- .country_name {
+.country_name {
   padding-left: 18%;
   padding-top: 5%;
- }
+}
 
- .card img {
+.card img {
   margin: auto;
   width: 8rem;
   min-height: 5rem;
@@ -32,10 +32,10 @@
   margin-top: 30%;
 }
 
- .country_name td {
+.country_name td {
   margin: auto;
   width: 100%;
- }
+}
 
 @media only screen and (max-width: 900px) {
   .card {
@@ -80,5 +80,4 @@
     font-size: 0.8rem;
     text-align: end;
   }
-  
 }
