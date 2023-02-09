@@ -12,15 +12,21 @@ const CountryCard = ({
     <a href={name}>
       <FaArrowRight />
     </a>
-    <tr>
-      <th className="card_image">
-        <img src={flags.png} alt="country flag" />
+    <tr className="country_name">
+      <th>
+        {name}
       </th>
     </tr>
-    <tr className="country_name">
+    <tr className="card_image">
       <td>
-        {name}
+        <img src={flags.png} alt="country flag" />
+      </td>
+    </tr>
+    <tr className="card_population">
+      <td>
         <p>
+          Pop:
+          {' '}
           {population}
         </p>
       </td>

@@ -14,22 +14,29 @@
   font-size: 1.2rem;
 }
 
-.card_image {
-  padding-left: 25%;
+.card a:hover {
+  filter:drop-shadow(1px 1px 3px lightgray);
 }
 
 .country_name {
-  padding-left: 18%;
-  padding-top: 5%;
+  margin: auto;
+}
+
+.card_image {
+  margin: auto;
 }
 
 .card img {
   margin: auto;
-  width: 8rem;
-  min-height: 5rem;
-  max-height: 5rem;
-  align-items: center;
-  margin-top: 30%;
+  min-width: 7rem;
+  max-width: 7rem;
+  min-height: 4rem;
+  max-height: 4rem;
+}
+
+.card_population {
+  margin: auto;
+  padding: 1% 0;
 }
 
 .country_name td {
@@ -39,7 +46,7 @@
 
 @media only screen and (max-width: 900px) {
   .card {
-    width: 9rem !important;
+    width: 270px!important;
   }
 
   .card a {
@@ -49,22 +56,36 @@
     top: 7%;
   }
 
+  .card a:hover {
+    filter:drop-shadow(3px px 5px lightgray);
+  }
+
   .card_image {
     width: 100%;
-    padding-left: 15%;
+    margin: auto;
+    padding-left: 28%;
+    padding-bottom: 2%;
   }
 
   .card img {
     margin: auto;
     width: 6rem;
     min-height: 4rem;
+    min-width: 7rem;
+    max-height: 4rem;
+    max-width: 5rem;
     align-items: center;
-    margin-top: 30%;
+    margin-top: 10%;
+  }
+
+  .card_population p {
+    padding-left: 2% !important;
   }
 
   .country_name {
-    width: 100%;
-    padding-left: 10%;
+   font-size: 1.2rem;
+   padding-top: 2%;
+   font-weight: bold;
   }
 
   .card-img-top {

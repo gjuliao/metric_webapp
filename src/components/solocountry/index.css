@@ -60,7 +60,7 @@
   padding: 0.5rem;
 }
 
-table tr:nth-child(even) td {
+.table_row tr:nth-child(even) td {
   background-color: #254581;
 }
 
@@ -130,7 +130,7 @@ table tr:nth-child(even) td {
     width: 100%;
   }
 
-  table tr:nth-child(even) td {
+  .table_row tr:nth-child(even) td {
     background-color: none !important;
   }
 }
