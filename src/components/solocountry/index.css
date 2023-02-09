@@ -73,6 +73,8 @@ table tr:nth-child(even) td {
     max-width: 600px;
     padding-top: 4%;
     margin-left: 12%;
+    height: 100vh;
+    padding-bottom: 130%;
   }
 
   .solo_card h2 {
@@ -123,8 +125,11 @@ table tr:nth-child(even) td {
   }
 
   .table_row tr {
-    display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: none !important;
   }
 }
