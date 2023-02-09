@@ -15,7 +15,7 @@
 }
 
 .card a:hover {
-  filter:drop-shadow(1px 1px 3px lightgray);
+  filter: drop-shadow(1px 1px 3px lightgray);
 }
 
 .country_name {
@@ -48,7 +48,7 @@
 
 @media only screen and (max-width: 900px) {
   .card {
-    width: 270px!important;
+    width: 270px !important;
   }
 
   .card a {
@@ -58,8 +58,8 @@
     top: 7%;
   }
 
-  .card a:hover {
-    filter:drop-shadow(3px px 5px lightgray);
+  .card a :hover {
+    filter: drop-shadow(3px px 5px lightgray);
   }
 
   .card_image {
@@ -90,9 +90,9 @@
   }
 
   .country_name {
-   font-size: 1.2rem;
-   padding-top: 2%;
-   font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 2%;
+    font-weight: bold;
   }
 
   .card-img-top {
