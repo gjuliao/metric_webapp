@@ -37,7 +37,7 @@
 
 # 📖 Metrics Web App <a name="about-project"></a>
 
-**[Metrics Web App]** Is a react app with that fetches data from an API and renders it based on a figma design.
+** Metrics Web App ** Is a react app that fetches data from an API with information about countries in Europe.  From the countries it brings data such as population, subregion, area and the capital of the country.  React components are being tested with Jest.  Live demo is being deployed on render.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,6 +48,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">JavaScript</a></li>
+    <li><a href="https://reactjs.org/">Jest</a></li>
     <li><a href="https://reactjs.org/">HTML</a></li>
     <li><a href="https://reactjs.org/">CSS</a></li>
     <li><a href="https://reactjs.org/">React</a></li>
