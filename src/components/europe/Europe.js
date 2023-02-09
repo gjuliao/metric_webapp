@@ -18,9 +18,6 @@ const Europe = () => {
               COUNTRIES IN EUROPE.
             </h3>
           </div>
-          <a className="know_more" href="/europe">
-            <div>Click here to know more</div>
-          </a>
         </div>
       </div>
       <Home />
