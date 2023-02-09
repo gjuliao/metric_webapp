@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
 .App {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #4269b2;
+  font-family: 'Lato', sans-serif !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    margin: auto;
+  }
 }

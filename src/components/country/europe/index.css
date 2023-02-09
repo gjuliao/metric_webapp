@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
 .europe_container {
   padding-top: 8%;
+  display: flex;
+  background-color: #5688e3;
+  font-family: 'Lato', sans-serif;
 }
 
 .europe {
@@ -7,32 +12,35 @@
 }
 
 .europe_map {
-  width: 40%;
-  min-width: 25rem;
+  width: 50%;
 }
 
-@media only screen and (max-width: 400px) {
-  .europe_map {
-    padding-top: 5%;
-    background-color: #22262a;
-    width: 100%;
-  }
-
-  .europe_container {
-    width: 100%;
-    align-items: center;
-  }
+.map_text {
+  margin: auto;
 }
 
-@media only screen and (min-width: 400px) {
-  .europe_map {
-    padding-top: 5%;
-    background-color: #22262a;
-    max-width: 100%;
+@media only screen and (max-width: 900px) {
+  .europe_container {
+    min-width: 600px;
+    max-width: 600px;
+    align-items: center;
+    width: 600px;
+    margin: auto;
   }
 
-  .europe_container {
-    width: 100%;
-    align-items: center;
+  .europe_map {
+    padding-top: 5%;
+    width: 60%;
+  }
+
+  .map_text {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  .know_more {
+    color: white;
   }
 }

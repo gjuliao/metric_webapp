@@ -11,13 +11,7 @@ const Home = () => {
   return (
     <div className="home">
       <h6>
-        Europe has
-        {' '}
-        {countries.length}
-        {' '}
-        number of countries
-        .
-        Search the one you would like to know more of.
+        Search stats by country.
       </h6>
       <form>
         <input placeholder="Search your country here..." type="search" value={query.query} onChange={(e) => setQuery(e.target.value)} />
