@@ -20,6 +20,7 @@
 
 .country_name {
   margin: auto;
+  padding-bottom: 5%;
 }
 
 .card_image {
@@ -35,8 +36,9 @@
 }
 
 .card_population {
-  margin: auto;
-  padding: 1% 0;
+  align-self: end;
+  padding-top: 2%;
+  padding-right: 20%;
 }
 
 .country_name td {
@@ -78,8 +80,13 @@
     margin-top: 10%;
   }
 
+  .card_population {
+    padding-top: 3%;
+  }
+
   .card_population p {
-    padding-left: 2% !important;
+    align-self: end;
+    padding-right: 7%;
   }
 
   .country_name {
