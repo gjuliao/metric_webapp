@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { FaArrowLeft } from 'react-icons/fa';
 import './index.css';
 
 const SoloCountry = ({
@@ -11,6 +13,9 @@ const SoloCountry = ({
   area,
 }) => (
   <div className="solo_card">
+    <Link className="arrow_left" to="/home">
+      <FaArrowLeft />
+    </Link>
     <h2>{name}</h2>
     <div className="body_card">
       <div className="flag_leftside">

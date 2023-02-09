@@ -3,9 +3,14 @@
 .solo_card {
   width: 80%;
   margin: auto;
-  margin-top: 5%;
+  padding-top: 4%;
   font-family: 'Lato', sans-serif;
   height: 100vh;
+}
+
+.arrow_left {
+  color: white;
+  font-size: 1.4rem;
 }
 
 .solo_card h2 {
