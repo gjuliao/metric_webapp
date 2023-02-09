@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { configureStore } from '@reduxjs/toolkit';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import logger from 'redux-logger';
 import dataReducer from './dataReducer';
 

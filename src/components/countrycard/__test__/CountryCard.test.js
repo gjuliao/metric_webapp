@@ -1,24 +1,28 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { MemoryRouter } from 'react-router';
 import CountryCard from '../CountryCard';
 import store from '../../../redux/store';
 
-test('It should render element with text Learn More', async () => {
+test('It should contain table title', async () => {
   render(
-    <Provider store={store}>
+    <MemoryRouter>
       <CountryCard />
-    </Provider>,
+    </MemoryRouter>,
   );
-  const headingElement = screen.getByText('Learn More');
+  const headingElement = screen.getByTitle('table');
   expect(headingElement).toBeInTheDocument();
 });
 
-test('It should render props text', async () => {
+test('It should render get by test id', async () => {
   render(
     <Provider store={store}>
-      <CountryCard name="Spain" />
+      <MemoryRouter>
+        <CountryCard />
+      </MemoryRouter>
     </Provider>,
   );
-  const headingElement = screen.getByText('Spain');
+  const headingElement = screen.getByTestId('table');
   expect(headingElement).toBeInTheDocument();
 });

@@ -11,6 +11,6 @@ const Mock = () => (
 
 test('It should render same text', () => {
   render(<Mock />);
-  const paraElement = screen.getByText(/Click here to know more/i);
+  const paraElement = screen.getByText(/COUNTRIES IN EUROPE./i);
   expect(paraElement).toBeInTheDocument();
 });

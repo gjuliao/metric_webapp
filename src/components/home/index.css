@@ -56,11 +56,26 @@
     padding-left: 5%;
   }
 
-  .country_section {
+  /* .country_section {
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
     padding-top: 5%;
     justify-content: space-around;
+  } */
+
+  .country_section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(27, 1fr);
+    grid-gap: 0;
+    margin: auto;
+  }
+
+  .country:nth-child(4n) {
+    background-color: #2e5aa7;
+  }
+
+  .country:nth-child(4n+1) {
+    background-color: #2e5aa7;
   }
 }
