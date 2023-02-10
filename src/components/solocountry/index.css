@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
+.solo_card {
+  width: 80%;
+  margin: auto;
+  padding-top: 4%;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  padding-bottom: 60%;
+}
+
+.arrow_left {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.solo_card h2 {
+  text-align: center;
+  padding-top: 8%;
+  color: #d9e2f7;
+}
+
+.body_card {
+  display: flex;
+}
+
+.flag_leftside,
+.flag_rightside {
+  width: 40%;
+  padding-bottom: 4%;
+}
+
+.flag_leftside {
+  padding-top: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flag_leftside img {
+  width: 70%;
+}
+
+.flag_meaning {
+  color: #d9e2f7;
+  margin-top: 20%;
+}
+
+.flag_meaning p {
+  color: #d9e2f7;
+}
+
+.flag_rightside {
+  color: #d9e2f7;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.table_row tr th {
+  padding-bottom: 10%;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.table_name td {
+  padding: 0.5rem;
+}
+
+.table_row tr:nth-child(even) td {
+  background-color: #254581;
+}
+
+.area {
+  padding-left: 2%;
+}
+
+@media only screen and (max-width: 900px) {
+  .solo_card {
+    max-width: 600px;
+    padding-top: 4%;
+    margin-left: 12%;
+    height: 100vh;
+    padding-bottom: 180%;
+  }
+
+  .solo_card h2 {
+    margin-bottom: 7%;
+  }
+
+  .flag_leftside img {
+    margin: auto;
+    margin-bottom: 4%;
+  }
+
+  .body_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .flag_leftside,
+  .flag_rightside {
+    width: auto;
+  }
+
+  .flag_meaning {
+    width: 92%;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  .flag_meaning h3 {
+    padding-bottom: 5%;
+  }
+
+  .flag_rightside {
+    width: 100%;
+    margin: auto;
+  }
+
+  .table_name {
+    font-weight: bold;
+  }
+
+  .table_row {
+    width: 90%;
+    margin: 3%;
+  }
+
+  .table_row td {
+    padding: 0.8rem;
+  }
+
+  .table_row tr {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

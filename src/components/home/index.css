@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
+.home {
+  width: 90%;
+  margin: auto;
+  padding-top: 3%;
+  background-color: #4269b2;
+  font-family: 'Lato', sans-serif;
+}
+
+.home h6 {
+  color: #d9e2f7;
+  padding-bottom: 2%;
+}
+
+.home form {
+  width: 100%;
+  border-style: none;
+  margin: auto;
+}
+
+.home form input {
+  min-width: 100%;
+  padding: 0.5rem;
+}
+
+.country_section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  justify-content: space-around;
+}
+
+.country {
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    max-width: 600px;
+    min-width: 600px;
+    margin: auto;
+  }
+
+  .home h6 {
+    margin: auto;
+    padding-left: 2%;
+  }
+
+  .home form {
+    padding-left: 2%;
+  }
+
+  .home form input {
+    min-width: 36rem;
+    padding-left: 5%;
+  }
+
+  /* .country_section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding-top: 5%;
+    justify-content: space-around;
+  } */
+
+  .country_section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(27, 1fr);
+    grid-gap: 0;
+    margin: auto;
+  }
+
+  .country:nth-child(4n) {
+    background-color: #2e5aa7;
+  }
+
+  .country:nth-child(4n+1) {
+    background-color: #2e5aa7;
+  }
+}

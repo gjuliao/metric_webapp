@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
+.navbar {
+  background-color: #4269b2;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin: auto;
+}
+
+.title {
+  color: #d9e2f7;
+}

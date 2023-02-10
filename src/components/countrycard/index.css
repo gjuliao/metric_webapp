@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap');
+
+.card {
+  background-color: transparent;
+  color: #fdfdf8;
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+}
+
+.card a {
+  align-self: end;
+  color: #fdfdf8 !important;
+  padding-right: 3%;
+  font-size: 1.2rem;
+}
+
+.card a:hover {
+  filter: drop-shadow(1px 1px 3px lightgray);
+}
+
+.country_name {
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.card_image {
+  margin: auto;
+}
+
+.card img {
+  margin: auto;
+  min-width: 8rem;
+  max-width: 12rem;
+  min-height: 8rem;
+  max-height: 8rem;
+}
+
+.card_population {
+  align-self: end;
+  padding-top: 2%;
+  padding-right: 20%;
+}
+
+.country_name td {
+  margin: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 100%;
+  }
+
+  .card a {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+  }
+
+  .card a :hover {
+    filter: drop-shadow(3px px 5px lightgray);
+  }
+
+  .card_image {
+    width: 100%;
+    margin: auto;
+    padding-left: 28%;
+    padding-bottom: 2%;
+  }
+
+  .card img {
+    margin: auto;
+    min-width: 6rem;
+    max-width: 8rem;
+    min-height: 6rem;
+    max-height: 6rem;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .card_population {
+    padding-top: 3%;
+  }
+
+  .card_population p {
+    align-self: end;
+    font-size: 0.8rem;
+    right: 2%;
+  }
+
+  .country_name {
+    font-size: 1.2rem;
+    padding-top: 2%;
+    font-weight: bold;
+  }
+
+  .card-img-top {
+    min-width: 3rem;
+    min-height: 7rem;
+  }
+
+  .flag_title h4 {
+    font-size: 1.2rem;
+  }
+
+  .flag_title p {
+    font-size: 0.8rem;
+    text-align: end;
+  }
+}
