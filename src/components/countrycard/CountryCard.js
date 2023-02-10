@@ -13,9 +13,9 @@ const CountryCard = ({
       <FaArrowRight />
     </Link>
     <div className="country_name">
-      <th>
+      <p>
         {name}
-      </th>
+      </p>
     </div>
     <div className="card_image">
       <div>
@@ -38,7 +38,7 @@ export default CountryCard;
 
 CountryCard.defaultProps = {
   name: '',
-  flags: [],
+  flags: {},
   population: 0,
 };
 

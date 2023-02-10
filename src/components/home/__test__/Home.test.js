@@ -19,6 +19,6 @@ test('It should render element with placeholder text', async () => {
       <Home />
     </Provider>,
   );
-  const headingElement = screen.getByPlaceholderText('Search your country here...');
+  const headingElement = screen.getByText('Search stats by country.');
   expect(headingElement).toBeInTheDocument();
 });
