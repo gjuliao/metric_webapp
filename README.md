@@ -39,6 +39,9 @@
 
 ** Metrics Web App ** Is a react app that fetches data from an API with information about countries in Europe.  From the countries it brings data such as population, subregion, area and the capital of the country.  React components are being tested with Jest.  Live demo is being deployed on render.
 
+ <img src="metric_demo_picture.png" alt="demo_picture" width="440"  height="auto" />
+  <br/>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
